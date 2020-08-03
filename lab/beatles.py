@@ -46,3 +46,6 @@ print(get_alive(beatles))
 
 # 4. Combine the above two functions to return the names of all the members who are alive:
 # Expected result: ['Paul McCartney', 'Ringo Starr']
+
+alive_beatles = get_alive(beatles)
+print(get_names(alive_beatles))
