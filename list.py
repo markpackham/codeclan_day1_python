@@ -14,11 +14,12 @@ stops.append("Edinburgh Waverley")
 stops.insert(0,"Queen Street")
 print(stops)
 print(stops.index("Croy"))
-stops.insert(4,"Polmont")
+stops.insert(stops.index("Linlithgow"),"Polmont")
 print(stops)
 stops.remove("Haymarket")
 print(stops)
 stops.clear()
 print(stops)
+# Another way to clear our list out
 stops = []
 print(stops)
