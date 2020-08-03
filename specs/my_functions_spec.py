@@ -1,5 +1,7 @@
 import unittest
 from my_functions import *
+# can import a specific function
+# from my_functions import greet
 
 class FunctionsPracticeTest(unittest.TestCase):
     def test_greet(self):
