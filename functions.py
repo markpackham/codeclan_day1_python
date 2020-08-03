@@ -35,3 +35,31 @@ def say_hello(name = "Billy"):
     print(f"Hello {name}!")
 # the default gets printed if nothing entered, handy to avoid None
 say_hello()
+
+
+# Keyword arguments (set the order things get done)
+# VERY useful for divides where order matters
+def add (a, b):
+    return a + b
+
+result = add(b = 5, a = 7)
+print(result)
+
+
+
+def divide (a, b):
+    return a / b
+
+result = divide(b = 5, a = 10)
+print(result)
+
+# Deconstruction (get the stuff out of the Dictionary)
+numbers = {
+    "a":100,
+    "b":5
+}
+def divide (a, b):
+    return a / b
+# same as doing divide(a = 100, b = 5)
+result = divide(**numbers)
+print(result)
