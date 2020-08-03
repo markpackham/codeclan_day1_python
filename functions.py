@@ -61,5 +61,19 @@ numbers = {
 def divide (a, b):
     return a / b
 # same as doing divide(a = 100, b = 5)
+# double star targets keyword arguments **
+# a single star would be for index arguments *
 result = divide(**numbers)
+print(result)
+
+
+
+def add(a, b = 2):
+    return a + b
+
+# result = add(a = -2) # 0
+# result = add(b = 3) # breaks
+# result = add(2, b = 4) # 6
+# result = add(b = 4, 2) # breaks ALWAYS start with positional argument over keyword argument, position first keyword second
+# result = add(a = 2, 4) # breaks ALWAYS start with positional argument over keyword argument
 print(result)
