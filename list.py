@@ -20,3 +20,5 @@ stops.remove("Haymarket")
 print(stops)
 stops.clear()
 print(stops)
+stops = []
+print(stops)
