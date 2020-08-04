@@ -14,6 +14,14 @@ beatles = [
 beatles[0]["instrument"] = "piano & guitar"
 print(beatles[0]["instrument"])
 
+# Better solution using list for all of them rather than just 1 string
+beatles[0]["instrument"] = ["piano, guitar"]
+beatles[1]["instrument"] = ["bass"]
+beatles[2]["instrument"] = ["guitar"]
+beatles[3]["instrument"] = ["drums"]
+print(beatles[0]["instrument"])
+
+
 # 2. Write a function which takes in the list of band members as a parameter,
 #    and returns a list of all the Beatles' names:
 # Expected result: ['John Lennon', 'Paul McCartney', 'George Harrison', 'Ringo Starr']
